@@ -45,12 +45,12 @@ Utilizing Pinecone for Document Retrieval (Optional):
 Execute the code in pinecone.ipynb to demonstrate document indexing and retrieval using Pinecone.
 
 # Requirements
-Python 3.x
-Streamlit
-Sentence Transformers
-Pinecone
-OpenAI API key
-Pinecone API key
+- Python 3.x
+- Streamlit
+- Sentence Transformers
+- Pinecone
+- OpenAI API key
+- Pinecone API key
 
 # Note
 Ensure that all necessary API keys are properly set up before running the application.
