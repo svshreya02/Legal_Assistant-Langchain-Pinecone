@@ -2,6 +2,9 @@
 # Overview
 LangChain Chatbot is a conversational AI system designed to assist users with legal queries and provide relevant information. It utilizes various natural language processing techniques, including OpenAI's GPT-3.5 model, Sentence Transformers, and Pinecone indexing, to understand user queries, refine them, and find the most relevant responses.
 
+![arch](architecture.jpeg)
+
+
 # Components
 # - utils.py
 This module contains utility functions and setup for the chatbot system. Here's an overview of its functionalities:
@@ -35,6 +38,7 @@ Set up environment variables for OpenAI and Pinecone API keys.
 ```python
 streamlit run app.py
 ```
+![demo](chat.jpeg)
 
 Interact with the chatbot by inputting queries in the provided text input field.
 
