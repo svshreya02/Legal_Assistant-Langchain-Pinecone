@@ -6,14 +6,14 @@ from indic_transliteration import sanscript
 from indic_transliteration.sanscript import transliterate
 
 # Set OpenAI API key
-openai.api_key = "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"
+openai.api_key = "xxxxxxxxxxxxxxxxxxxxxxxxxx"
 
 # Initialize SentenceTransformer model
 model = SentenceTransformer('all-MiniLM-L6-v2')
 
 # Initialize Pinecone index
-pinecone.init(api_key='14b2909a-c00c-4ff8-9b79-87eb51b9d891', environment='gcp-starter')
-index = pinecone.Index('langchain-chatbot')
+pinecone.init(api_key='xxxxxxxxxxxxxxxxxxx', environment='xxxxxxxxxxxxxxx')
+index = pinecone.Index('xxxxxxxxxxxxx')
 
 # Function to find the most relevant match in Pinecone index
 def find_match(input):
