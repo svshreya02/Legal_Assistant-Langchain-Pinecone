@@ -38,9 +38,8 @@ Set up environment variables for OpenAI and Pinecone API keys.
 ```python
 streamlit run app.py
 ```
-![demo](chat.jpeg)
-
 Interact with the chatbot by inputting queries in the provided text input field.
+![demo](chat.jpeg)
 
 Utilizing Pinecone for Document Retrieval (Optional):
 Execute the code in pinecone.ipynb to demonstrate document indexing and retrieval using Pinecone.
