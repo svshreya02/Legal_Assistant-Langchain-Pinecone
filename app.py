@@ -26,7 +26,7 @@ if 'buffer_memory' not in st.session_state:
     st.session_state.buffer_memory = ConversationBufferWindowMemory(k=3, return_messages=True)
 
 # Initialize ChatOpenAI and conversation
-llm = ChatOpenAI(model_name="gpt-3.5-turbo", openai_api_key="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")
+llm = ChatOpenAI(model_name="gpt-3.5-turbo", openai_api_key="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 
 system_msg_template = SystemMessagePromptTemplate.from_template("""
     Legal Guardian' is a GPT designed to assist with a broad range of legal questions related to children's issues, focusing on laws in India...
