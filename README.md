@@ -52,7 +52,5 @@ Execute the code in pinecone.ipynb to demonstrate document indexing and retrieva
 - OpenAI API key
 - Pinecone API key
 
-# Note
-Ensure that all necessary API keys are properly set up before running the application.
-
-Feel free to customize this README further according to your project's specifics!
+# LICENSE
+Check License file
