@@ -1,4 +1,4 @@
-# Import statements
+#Import statements
 from langchain.chat_models import ChatOpenAI
 from langchain.chains import ConversationChain
 from langchain.chains.conversation.memory import ConversationBufferWindowMemory
@@ -12,10 +12,7 @@ import streamlit as st
 from streamlit_chat import message
 from utils import *
 
-# Streamlit setup
 st.subheader("Legal Guardian")
-
-# Session state initialization
 if 'responses' not in st.session_state:
     st.session_state['responses'] = ["How can I assist you?"]
 
@@ -25,7 +22,7 @@ if 'requests' not in st.session_state:
 if 'buffer_memory' not in st.session_state:
     st.session_state.buffer_memory = ConversationBufferWindowMemory(k=3, return_messages=True)
 
-# Initialize ChatOpenAI and conversation
+# Initialize ChatOpenAI and conversation (replacew with whatever model you want)
 llm = ChatOpenAI(model_name="gpt-3.5-turbo", openai_api_key="xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx")
 
 system_msg_template = SystemMessagePromptTemplate.from_template("""
@@ -63,3 +60,8 @@ with response_container:
             message(st.session_state['responses'][i], key=str(i))
             if i < len(st.session_state['requests']):
                 message(st.session_state["requests"][i], is_user=True, key=str(i) + '_user')
+    
+st.markdown("""
+---
+Copyright © 2023 Shreya Sivakumar. All rights reserved.
+""")
